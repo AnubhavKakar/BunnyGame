@@ -81,9 +81,6 @@ while run:
             x1 += 10
             moving = True
 
-
-
-        
         if moving:
             value += 2
         
@@ -95,8 +92,6 @@ while run:
         image = pygame.transform.scale(image, (100,100))
 
         screen.blit(image, (x1, y1))
-
-        
 
         pygame.display.update()
 
