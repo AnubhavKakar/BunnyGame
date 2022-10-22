@@ -31,10 +31,10 @@ def drawBg():
 class Bunny(pygame.sprite.Sprite):
     def __init__(self, x1, y1, scale):
         pygame.sprite.Sprite.__init__(self)
-        img =  [pygame.image.load('img/player/Idle/movel_0.png'),
-                pygame.image.load('img/player/Idle/movel_1.png'),
-                pygame.image.load('img/player/Idle/movel_2.png'),
-                pygame.image.load('img/player/Idle/movel_3.png')]
+        img =  [pygame.image.load('Images/movel_0.png'),
+                pygame.image.load('Images/movel_1.png'),
+                pygame.image.load('Images/movel_2.png'),
+                pygame.image.load('Images/movel_3.png')]
         
         self.image = img 
         #pygame.transform.scale(img, ((img.get_width() * scale), (img.get_height() * scale)))
@@ -45,7 +45,7 @@ class Bunny(pygame.sprite.Sprite):
      #   screen.blit(self.image, (x1, y1))
 
 
-player1 = Bunny(x1, y1, 1.5)
+player1 = Bunny(x1, y1, 0.5)
 
 run = True
 while run:
@@ -93,7 +93,7 @@ while run:
 
         image = player1.image[value]
 
-        image = pygame.transform.scale(image, (180,180))
+        image = pygame.transform.scale(image, (100,100))
 
         screen.blit(image, (x1, y1))
 
