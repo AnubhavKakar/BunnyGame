@@ -45,7 +45,7 @@ class Bunny(pygame.sprite.Sprite):
      #   screen.blit(self.image, (x1, y1))
 
 
-player1 = Bunny(x1, y1, 0.5)
+player1 = Bunny(x1, y1, 1)
 
 run = True
 while run:
