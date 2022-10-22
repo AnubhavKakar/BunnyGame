@@ -82,7 +82,7 @@ while run:
             moving = True
 
         if moving:
-            value += 2
+            value += 3
         
         if value >= len(player1.image):
             value = 0
